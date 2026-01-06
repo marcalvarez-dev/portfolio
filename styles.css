@@ -328,9 +328,10 @@ h1 {
 /* Footer */
 
 footer {
-  min-height: 500px;
+  min-height: 200px;
 }
 
+/*
 .footer-icono {
   height: 80px;
   width: 80px;
@@ -341,7 +342,7 @@ footer {
   font-size: 1.5rem;
   padding: 20px;
   margin-bottom: 30px;
-}
+}*/
 
 .iconos-redes-sociales a {
   width: 50px;
