@@ -89,13 +89,23 @@
             <li class="nav-item">
               <a class="nav-link" href="#contacto">Contacto</a>
             </li>
+            <button
+              style="
+                border: 0px;
+                background-color: var(--bg-color);
+                color: var(--btn-bg);
+              "
+              id="modo"
+            >
+              🌙 / ☀️
+            </button>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Hero -->
-    <section id="hero" class="hero" style="background-color: #121212">
+    <section id="hero" class="hero">
       <div class="container text-center">
         <div class="row">
           <div class="columna col-12 col-md-4">
@@ -124,7 +134,7 @@
           móviles y CMS para la gestión de contenidos.
         </p>
     </section> -->
-    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <section id="sobre-mi" class="sobre-mi">
       <div class="contenedor">
         <div class="row align-items-center">
           <div class="col-12 col-md-6">
@@ -173,10 +183,7 @@
     </section>
 
     <!-- Habilidades -->
-    <section
-      id="habilidades"
-      class="habilidades seccion-oscura d-flex flex-column"
-    >
+    <section id="habilidades" class="habilidades d-flex flex-column">
       <h2 class="seccion-titulo texto-principal">Habilidades</h2>
       <div class="container text-center habilidades-contenedor">
         <h3 class="texto-secundario">Backend</h3>
@@ -264,10 +271,7 @@
     </section>
 
     <!-- Proyectos -->
-    <section
-      id="proyectos"
-      class="proyectos-recientes seccion-oscura d-flex flex-column"
-    >
+    <section id="proyectos" class="proyectos-recientes d-flex flex-column">
       <h2 class="seccion-titulo texto-principal">Mis Proyectos</h2>
       <h3 class="seccion-descripcion texto-secundario">Proyectos recientes</h3>
       <!-- Galeria prpyectos -->
@@ -316,11 +320,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button
-          type="button"
-          class="btn btn-dark"
-          style="font-family: &quot;Poppins&quot;"
-        >
+        <button type="button" class="btn btn-dark">
           Ver más proyectos
           <i class="bi bi-arrow-right-circle-fill"></i>
         </button>
@@ -423,7 +423,7 @@
     </section>-->
 
     <!-- Contacto -->
-    <section id="contacto" class="contacto seccion-oscura">
+    <section id="contacto" class="contacto">
       <div class="container">
         <div
           class="container text-center rectangulo d-flex justify-content-evenly"
@@ -431,18 +431,11 @@
           <div class="row">
             <div
               class="col-12 col-md-4 seccion-titulo"
-              style="text-decoration: none"
+              style="text-decoration: none; color: var(--contact-text)"
             >
               ¡Hablemos!
             </div>
-            <div
-              class="col-12 col-md-4"
-              style="
-                color: #121212;
-                font-family: &quot;Poppins&quot;, sans-serif;
-              "
-              ;
-            >
+            <div class="col-12 col-md-4" style="color: var(--contact-text)">
               ¿Tienes un proyecto en mente? Escríbeme.
             </div>
             <div class="col-12 col-md-4">
@@ -460,7 +453,7 @@
 
     <!-- Footer -->
     <footer
-      class="seccion-oscura d-flex flex-column align-items-center justify-content-center"
+      class="d-flex flex-column align-items-center justify-content-center"
     >
       <!--<img
         class="footer-icono"
@@ -509,12 +502,7 @@
           <i class="bi bi-envelope"></i
         ></a>
       </div>
-      <div
-        style="color: #9ca3af; font-family: &quot;Poppins&quot;"
-        class="derechos-de-autor"
-      >
-        Creado por Marc Álvarez (2026) &#169;
-      </div>
+      <div class="derechos-de-autor">Creado por Marc Álvarez (2026) &#169;</div>
     </footer>
 
     <script
@@ -522,5 +510,24 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const toggle = document.getElementById("modo");
+
+      // Aplica modo guardado al cargar
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+      }
+
+      // Cambia modo al hacer click
+      toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+          localStorage.setItem("theme", "dark");
+        } else {
+          localStorage.setItem("theme", "light");
+        }
+      });
+    </script>
   </body>
 </html>

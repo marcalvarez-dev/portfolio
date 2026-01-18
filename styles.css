@@ -1,24 +1,48 @@
 /*Estilos generales */
-p,
-h1,
-h2 {
-  font-family: "Poppins", sans-serif;
+:root {
+  /*Colores modo*/
+  --bg-color: #f5f6f7;
+  --text-color: #121212;
+  --sec-text-color: #9ca3af;
+  --card-bg: #e5e5e5;
+  --btn-bg: #121212;
+  --btn-text: #e5e5e5;
+  --icon-color: #121212;
+  --overlay-color: #121212;
+  --contact-text: #f5f6f7;
+  --contact-bg: #121212;
+}
+
+body.dark-mode {
+  /* Colores modo oscuro */
+  --bg-color: #121212;
+  --text-color: #e5e5e5;
+  --sec-text-color: #9ca3af;
+  --card-bg: #e5e5e5;
+  --btn-bg: #e5e5e5;
+  --btn-text: #121212;
+  --icon-color: #e5e5e5;
+  --overlay-color: #e5e5e5;
+  --contact-text: #121212;
+  --contact-bg: #f5f6f7;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #121212;
   overflow-x: hidden;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
 }
 
 .texto-principal {
-  color: #e5e5e5;
+  color: var(--text-color);
 }
 
 .texto-secundario {
-  color: #9ca3af;
+  color: var(--sec-text-color);
 }
 
 section {
@@ -33,20 +57,9 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
-.seccion-oscura {
-  color: #e5e5e5;
-  background-color: #121212;
-}
-
-.seccion-clara {
-  color: black;
-  background-color: #f5f6f7;
-}
-
 .seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -58,21 +71,8 @@ h1 {
 .btn-dark {
   font-size: 1.1rem;
   margin-bottom: 40px;
-  background-color: #e5e5e5;
-  color: #121212;
-}
-
-.btn-dark:hover {
-  background-color: #121212;
-  color: #e5e5e5;
-}
-
-.texto-negro {
-  color: black;
-}
-
-.texto-blanco {
-  color: white;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
 }
 
 .seccion-descripcion {
@@ -81,18 +81,13 @@ h1 {
 }
 
 .nav-link {
-  font-family: "Poppins", sans-serif;
-  color: #e5e5e5;
-}
-
-.nav-link:hover {
-  color: #e5e5e5;
+  color: var(--text-color);
 }
 
 /*Barra de navegacion*/
 .navbar {
   padding: 2rem;
-  background-color: #121212;
+  background-color: var(--bg-color);
 }
 
 .navbar-collapse {
@@ -104,18 +99,22 @@ h1 {
   filter: invert(1);
 }
 
+.nav-link:hover {
+  color: var(--sec-text-color);
+}
+
 /* Hero */
 
 .hero {
-  background-color: #f5f6f7;
+  background-color: var(--bg-color);
   min-height: 450px;
   text-align: center;
 }
 
 .hero-principal {
   padding: 3rem;
-  background-color: red;
 }
+
 .hero-imagen-perfil {
   width: 100%;
   height: auto;
@@ -125,7 +124,7 @@ h1 {
 
 .hero-principal h2 {
   font-size: 1.5rem;
-  color: #615151;
+  color: var(--text-color);
 }
 
 .hero .columna {
@@ -180,7 +179,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e5e5e5;
+  background-color: var(--card-bg);
 }
 
 .habilidades .card h5 {
@@ -240,7 +239,7 @@ h1 {
 }
 
 .overlay i {
-  color: #121212;
+  color: var(--overlay-color);
   font-size: 60px;
   margin: 10px;
 }
@@ -329,10 +328,10 @@ h1 {
 
 .contacto .rectangulo {
   margin-top: -5rem;
-  background-color: #e5e5e5;
+  background-color: var(--contact-bg);
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px white;
-  color: #121212;
+  color: var(--text-color);
 }
 
 .contacto .row {
@@ -342,41 +341,42 @@ h1 {
 }
 
 .contacto .description {
-  color: white;
   font-size: 1.2rem;
 }
 
 .contacto button {
-  color: #121212;
+  color: var(--btn-text);
   font-weight: bold;
-  background-color: transparent;
-  border: 2px solid #121212;
+  background-color: var(--contact-bg);
+  border: 2px solid var(--btn-text);
   padding: 1.2rem 2em;
   margin: 10px;
   border-radius: 100px;
   transition: all 0.2 ease-in-out;
-  font-family: "Poppins";
 }
 
 .contacto button:hover {
-  background-color: #121212;
-  color: #e5e5e5;
+  background-color: var(--btn-text);
+  color: var(--btn-bg);
+  border: 2px solid var(--bg-color);
 }
 
 .contacto button i {
-  color: #121212;
+  color: var(--btn-text);
   font-size: 1.3rem;
   transition: all 0.2s ease-in-out;
 }
 
 .contacto button:hover i {
-  color: #e5e5e5;
+  color: var(--btn-bg);
 }
 
 /* Footer */
 
 footer {
   min-height: 200px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 /*
@@ -400,29 +400,29 @@ footer {
   justify-content: center;
   padding: 2px;
   margin: 20px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid var(--icon-color);
   border-radius: 50%;
   transition: all 0.2s ease-in;
 }
 
 .iconos-redes-sociales i {
-  color: #e5e5e5;
+  color: var(--icon-color);
   font-size: 1.5rem;
   transition: all 0.2 ease-in;
 }
 
 .iconos-redes-sociales a:hover {
-  background-color: white;
-  border: 2px solid black;
+  background-color: var(--text-color);
+  border: 2px solid var(--text-color);
 }
 
 .iconos-redes-sociales a:hover i {
-  color: black;
+  color: var(--bg-color);
 }
 
 .derechos-de-autor {
   font-size: 15px;
-  color: grey;
+  color: var(--sec-text-color);
   padding: 20px;
 }
 
