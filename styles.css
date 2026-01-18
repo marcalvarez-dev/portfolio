@@ -100,6 +100,10 @@ h1 {
   justify-content: space-between;
 }
 
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
 /* Hero */
 
 .hero {
@@ -145,13 +149,16 @@ h1 {
 
 /* Sobre mi */
 .sobre-mi {
-  height: 800px;
   padding: 10px;
 }
 
 .sobre-mi .contenedor {
-  max-width: 1000px;
+  max-width: 1100px;
   text-align: left;
+}
+
+.email {
+  word-break: break-all;
 }
 
 /* Habilidades */
@@ -165,8 +172,6 @@ h1 {
 }
 
 .habilidades .card {
-  min-height: 150px;
-  min-width: 150px;
   aspect-ratio: 5/4;
   width: 100%;
   font-size: 2.5rem;
