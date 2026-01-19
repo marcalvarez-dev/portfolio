@@ -20,5 +20,5 @@ Puedes ver el proyecto en vivo aquí:
 ## 🎨 Características
 - Diseño limpio y moderno.  
 - Animaciones suaves usando **JavaScript** y **CSS**.  
-- **Responsive**: compatible con móviles, tabletas y escritorio.  
+- Responsive: compatible con móviles, tabletas y escritorio.  
 - Navegación intuitiva y fácil de usar.  
