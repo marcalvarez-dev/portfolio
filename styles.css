@@ -465,3 +465,25 @@ footer {
     margin-bottom: 5px;
   }
 }
+
+/* #hero img {
+  translate: -100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+
+#hero.show img {
+  translate: 0;
+  opacity: 1;
+}
+ */
+.animacion {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.animacion.show {
+  opacity: 1;
+  transform: translateY(0);
+}
