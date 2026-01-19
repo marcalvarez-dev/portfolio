@@ -10,10 +10,10 @@ Puedes ver el proyecto en vivo aquí:
 ---
 
 ## 💻 Tecnologías Utilizadas
-- **HTML5**: Estructura semántica del sitio web.  
-- **CSS3**: Estilos modernos y animaciones personalizadas.  
-- **JavaScript**: Animaciones y efectos interactivos.  
-- **Bootstrap 5**: Diseño responsive y componentes predefinidos.
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Bootstrap 5**
 
 ---
 
