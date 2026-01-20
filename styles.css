@@ -106,7 +106,6 @@ h1 {
 /* Hero */
 
 .hero {
-  background-color: var(--bg-color);
   min-height: 450px;
   text-align: center;
 }
@@ -479,8 +478,15 @@ footer {
  */
 .animacion {
   opacity: 0;
-  transform: translateY(20px);
-  transition: all 1s ease;
+  transform: translateY(40px);
+  transition:
+    all 1s ease,
+    transform 1s ease;
+}
+
+.animacion-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
 .animacion.show {
