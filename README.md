@@ -1,4 +1,4 @@
-¡Bienvenido a mi portafolio personal!  
+¡Bienvenid@ a mi portafolio personal!  
 Este proyecto está diseñado para mostrar mis habilidades y trabajos a través de una web moderna y responsive.
 
 ---
@@ -21,4 +21,3 @@ Puedes ver el proyecto en vivo aquí:
 - Diseño limpio y moderno.  
 - Animaciones suaves usando **JavaScript** y **CSS**.  
 - Responsive: compatible con móviles, tabletas y escritorio.  
-- Navegación intuitiva y fácil de usar.  
