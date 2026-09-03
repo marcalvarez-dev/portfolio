@@ -86,8 +86,14 @@ h1 {
 
 /*Barra de navegacion*/
 .navbar {
-  padding: 2rem;
+  padding: 0.75rem 2rem;
   background-color: var(--bg-color);
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar-collapse {
@@ -108,6 +114,7 @@ h1 {
 .hero {
   min-height: 650px;
   text-align: center;
+  padding-top: 100px;
 }
 
 .hero-principal {
@@ -493,3 +500,4 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
