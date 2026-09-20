@@ -1,17 +1,33 @@
 [
   {
-    "title": "SVGL - A beautiful library with SVG logos",
-    "description": "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    "link": "https://svgl.vercel.app/",
-    "github": "https://github.com/pheralb/svgl",
-    "image": "/projects/svgl.webp",
-    "tags": ["NEXT", "TAILWIND"]
+    "title": "Chitanka - Proyecto final de curso",
+    "description": "Librería online desarrollada con Laravel, PHP, MySQL y Bootstrap como proyecto final de CFGS DAW. Incluye catálogo de libros, autenticación, roles de usuario, carrito y proceso de compra, gestión de pedidos y perfiles, panel de administración y envío de correos electrónicos.",
+    "link": "https://chitanka-production.up.railway.app/",
+    "github": "https://github.com/marcalvarez-dev/chitanka",
+    "image": "/projects/app_3.png",
+    "tags": [
+      "LARAVEL",
+      "BOOTSTRAP"
+    ]
   },
   {
-    "title": "AdventJS - Retos de programación con JavaScript y TypeScript",
-    "description": "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    "link": "https://adventjs.dev",
-    "image": "/projects/adventjs.webp",
-    "tags": ["NEXT", "TAILWIND"]
+    "title": "Weather App",
+    "description": "Aplicación web desarrollada con React que permite consultar el tiempo actual de cualquier ciudad. Integra una API meteorológica para obtener datos actualizados como la temperatura, la descripción del clima y el icono correspondiente, ofreciendo una experiencia sencilla e intuitiva.",
+    "link": "https://github.com/marcalvarez-dev/weather-app",
+    "github": "https://github.com/marcalvarez-dev/weather-app",
+    "image": "/projects/app_2.png",
+    "tags": [
+      "REACT"
+    ]
+  },
+  {
+    "title": "ToDo App",
+    "description": "Aplicación de gestión de tareas desarrollada con React, diseñada para organizar y administrar tareas de forma sencilla e intuitiva. Permite añadir, eliminar y reordenar tareas fácilmente, ofreciendo una experiencia de usuario rápida, limpia y responsive.",
+    "link": "https://chitanka-production.up.railway.app/",
+    "github": "https://github.com/marcalvarez-dev/todo-app",
+    "image": "/projects/app_1.png",
+    "tags": [
+      "REACT"
+    ]
   }
 ]

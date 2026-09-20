@@ -1,5 +1,5 @@
 ---
-import ThemeToggle from "./ThemeToggle.astro"
+import ThemeToggle from "./ThemeToggle.astro";
 
 const navItems = [
   {
@@ -20,9 +20,9 @@ const navItems = [
   {
     title: "Contacto",
     label: "contacto",
-    url: "mailto:miduga@gmail.com",
+    url: "mailto:marcalvarezruiz9@gmail.com",
   },
-]
+];
 ---
 
 <header
@@ -34,7 +34,7 @@ const navItems = [
     {
       navItems.map((link) => (
         <a
-          class="nav-link relative text-xs sm:text-sm block px-1.5 sm:px-3 py-2 sm:py-1.5 rounded-full transition-colors duration-200 hover:text-yellow-500 dark:hover:text-yellow-400"
+          class="nav-link relative text-xs sm:text-sm block px-1.5 sm:px-3 py-2 sm:py-1.5 rounded-full transition-colors duration-200 hover:text-blue-600 dark:hover:text-sky-400"
           aria-label={link.label}
           href={link.url}
         >
@@ -50,45 +50,53 @@ const navItems = [
 
 <script>
   document.addEventListener("astro:page-load", () => {
-    const sections = document.querySelectorAll("section")
-    const navItems = document.querySelectorAll("header nav a")
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll("header nav a");
 
     const callback = (entries: any[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           navItems.forEach((item) => {
             if (item.getAttribute("aria-label") == entry.target.id) {
-              item.classList.add("text-yellow-500", "dark:text-yellow-400", "bg-yellow-400/10")
-              item.classList.remove("text-gray-600", "dark:text-gray-300")
+              item.classList.add(
+                "text-blue-600",
+                "dark:text-sky-400",
+                "bg-sky-400/10",
+              );
+              item.classList.remove("text-gray-600", "dark:text-gray-300");
             } else {
-              item.classList.remove("text-yellow-500", "dark:text-yellow-400", "bg-yellow-400/10")
-              item.classList.add("text-gray-600", "dark:text-gray-300")
+              item.classList.remove(
+                "text-blue-600",
+                "dark:text-sky-400",
+                "bg-sky-400/10",
+              );
+              item.classList.add("text-gray-600", "dark:text-gray-300");
             }
-          })
+          });
         }
-      })
-    }
+      });
+    };
 
     const observer = new IntersectionObserver(callback, {
       root: null,
       rootMargin: "0px",
       threshold: 0.3,
-    })
+    });
 
     sections.forEach((section) => {
-      observer.observe(section)
-    })
+      observer.observe(section);
+    });
 
     document.onvisibilitychange = () => {
       if (document.visibilityState === "hidden") {
-        observer.disconnect()
+        observer.disconnect();
       } else {
         sections.forEach((section) => {
-          observer.observe(section)
-        })
+          observer.observe(section);
+        });
       }
-    }
-  })
+    };
+  });
 </script>
 
 <style>
@@ -102,7 +110,7 @@ const navItems = [
     @apply dark:bg-gray-900/80 bg-white/60;
   }
 
-  .nav-link.text-yellow-500 {
+  .nav-link.text-blue-600 {
     @apply font-semibold;
   }
 
