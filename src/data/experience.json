@@ -1,8 +1,20 @@
 [
   {
     "date": "Enero 2019 - Marzo 2019",
-    "title": "React Native Developer",
+    "title": "React Native Developer (Prácticas)",
     "company": "Eatkube",
-    "description": "Start-up de delivery de comida a domicilio. Encargado del desarrollo de la app de restaurante con React Native, con la que el local recibía y aceptaba los pedidos online de la plataforma."
+    "description": "Start-up de delivery de comida a domicilio. Desarrollé con React Native la app que utilizaba el restaurante para recibir y aceptar los pedidos online."
+  },
+  {
+    "date": "Abril 2017 - Julio 2017",
+    "title": "Técnico de Soporte Informático (Prácticas)",
+    "company": "Industriales Sud",
+    "description": "Encargado del soporte técnico de hardware y software, la administración de Active Directory y Windows Server, y el mantenimiento del ERP de la compañía."
+  },
+  {
+    "date": "Marzo 2017 - Julio 2017",
+    "title": "Técnico de Sistemas Linux (Prácticas)",
+    "company": "INS Daniel Blanxart",
+    "description": "Encargado del soporte técnico y la administración básica de sistemas."
   }
 ]
